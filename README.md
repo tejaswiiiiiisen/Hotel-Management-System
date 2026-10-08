@@ -2,11 +2,11 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:2563EB,100:06B6D4&height=200&section=header&text=HOTEL%20MANAGEMENT%20SYSTEM&fontSize=38&fontColor=FFFFFF&fontAlignY=38&desc=SMART%20HOTEL%20OPERATIONS&descAlignY=60&descSize=18&animation=twinkling" width="100%" alt="Hotel Management System Header"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&width=650&lines=Manage+Hotels+Smarter;Simplify+Hotel+Operations;One+Platform.+Complete+Control." alt="Typing Animation"/>
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&width=700&lines=Manage+Hotels+Smarter;Simplify+Hotel+Operations;One+Platform.+Complete+Control." alt="Typing Animation"/>
 
 <br/><br/>
 
-<a href="https://hotel-management-system-tejaswi14.vercel.app/login">
+<a href="https://hotel-management-system-tejaswi14.vercel.app/">
 <img src="https://img.shields.io/badge/VISIT_LIVE_WEBSITE-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Website"/>
 </a>
 
@@ -30,21 +30,25 @@ It focuses on **real-world hotel operations, role-based access, responsive UI, s
 
 > *Manage Better. Operate Smarter. Grow Faster.*
 
+---
+
 ## 🌟 Features
 
-- 🔐 Secure authentication and login
-- 👥 Role-based access control
-- 🏨 Hotel and branch management
-- 🛏️ Room management
-- 📅 Booking management
-- 👨‍💼 Employee management
-- 🧹 Housekeeping management
-- 💰 Accounting and salary management
-- 📊 Dashboard and reports
-- 🌐 Multi-branch support
-- 🎨 Modern responsive UI
-- ✨ Smooth animations and transitions
-- ⚡ Fast and interactive user experience
+- 🔐 Secure Authentication & Login
+- 👥 Role-Based Access Control
+- 🏨 Hotel & Branch Management
+- 🛏️ Room Management
+- 📅 Booking Management
+- 👨‍💼 Employee Management
+- 🧹 Housekeeping Management
+- 💰 Accounting & Salary Management
+- 📊 Dashboard & Reports
+- 🌐 Multi-Branch Support
+- 🎨 Modern Responsive UI
+- ✨ Smooth Animations & Transitions
+- ⚡ Fast and Interactive User Experience
+
+---
 
 ## 👤 User Roles
 
@@ -68,19 +72,27 @@ It focuses on **real-world hotel operations, role-based access, responsive UI, s
 - Manage daily hotel operations
 - Perform department-specific tasks
 
+---
+
 ## 🖥️ Live Website
 
 <div align="center">
 
 ### Experience The Hotel Management System
 
-<a href="https://hotel-management-system-tejaswi14.vercel.app/login">
+<a href="https://hotel-management-system-tejaswi14.vercel.app/">
 <img src="https://img.shields.io/badge/EXPLORE_LIVE_WEBSITE-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Explore Live Website"/>
 </a>
 
 <br/><br/>
 
-**[Visit Hotel Management System →](https://hotel-management-system-tejaswi14.vercel.app/login)**
+<a href="https://hotel-management-system-tejaswi14.vercel.app/">
+<img src="https://img.shields.io/badge/OPEN_HOTEL_MANAGEMENT_SYSTEM-06B6D4?style=for-the-badge&logo=vercel&logoColor=white" alt="Open Live Website"/>
+</a>
+
+<br/><br/>
+
+**[Visit Hotel Management System →](https://hotel-management-system-tejaswi14.vercel.app/)**
 
 </div>
 
@@ -94,7 +106,7 @@ It focuses on **real-world hotel operations, role-based access, responsive UI, s
 
 <img src="https://skillicons.dev/icons?i=react,js,html,css,vite&theme=dark" alt="React JavaScript HTML CSS Vite"/>
 
-<br/>
+<br/><br/>
 
 <img src="https://img.shields.io/badge/React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React.js"/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
@@ -108,7 +120,7 @@ It focuses on **real-world hotel operations, role-based access, responsive UI, s
 
 <img src="https://skillicons.dev/icons?i=nodejs,express&theme=dark" alt="Node.js Express.js"/>
 
-<br/>
+<br/><br/>
 
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
 <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/>
@@ -119,7 +131,7 @@ It focuses on **real-world hotel operations, role-based access, responsive UI, s
 
 <img src="https://skillicons.dev/icons?i=mysql&theme=dark" alt="MySQL"/>
 
-<br/>
+<br/><br/>
 
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
 
