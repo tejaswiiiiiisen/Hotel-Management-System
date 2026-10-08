@@ -1,0 +1,585 @@
+/* ========================================================
+   ORGANIZATIONS PAGE - MODERN GRID & LIST VIEW STYLES
+   ======================================================== */
+
+.orgs-toolbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+[data-theme="dark"] .orgs-toolbar-container {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.orgs-title-group h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+[data-theme="dark"] .orgs-title-group h2 {
+  color: #f8fafc;
+}
+
+.orgs-title-group .page-sub {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+[data-theme="dark"] .orgs-title-group .page-sub {
+  color: #94a3b8;
+}
+
+.orgs-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Search Input */
+.orgs-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 240px;
+}
+
+.orgs-search-box svg.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #94a3b8;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.orgs-search-input {
+  width: 100%;
+  padding: 8px 32px 8px 36px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #1e293b;
+  font-size: 13px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.orgs-search-input:focus {
+  border-color: #7c3aed;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+[data-theme="dark"] .orgs-search-input {
+  background: #0f172a;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .orgs-search-input:focus {
+  border-color: #a78bfa;
+  background: #1e293b;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+}
+
+.orgs-search-clear {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 2px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orgs-search-clear:hover {
+  color: #ef4444;
+}
+
+/* View Mode Switcher */
+.orgs-view-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+[data-theme="dark"] .orgs-view-switcher {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.orgs-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 9px;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.orgs-view-btn:hover {
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.orgs-view-btn.active {
+  background: #ffffff;
+  color: #7c3aed;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.16);
+}
+
+[data-theme="dark"] .orgs-view-btn {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .orgs-view-btn:hover {
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .orgs-view-btn.active {
+  background: #7c3aed;
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(124, 58, 237, 0.4);
+}
+
+/* ========================================================
+   GRID VIEW - ORGANIZATION CARDS ("CART")
+   ======================================================== */
+
+.orgs-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 22px;
+  animation: orgsFadeIn 0.3s ease-out forwards;
+}
+
+@keyframes orgsFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.org-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.04);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.org-card::before {
+  display: none;
+}
+
+.org-card:hover {
+  transform: translateY(-4px);
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .org-card {
+  background: #171c33;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .org-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: #1c223e;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
+}
+
+/* Card Header */
+.org-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.org-card-identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
+}
+
+.org-card-logo-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.12) 0%, rgba(99, 102, 241, 0.12) 100%);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.org-card:hover .org-card-logo-wrap {
+  transform: scale(1.05);
+}
+
+.org-card-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.org-card-logo-icon {
+  font-size: 24px;
+}
+
+.org-card-title-box {
+  flex: 1;
+  min-width: 0;
+}
+
+.org-card-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.01em;
+}
+
+[data-theme="dark"] .org-card-name {
+  color: #ffffff;
+}
+
+.org-card-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+[data-theme="dark"] .org-card-location {
+  color: #94a3b8;
+}
+
+.org-card-location svg {
+  color: #ef4444;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+/* Org Status Pill */
+.org-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+
+.org-status-pill.active {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+[data-theme="dark"] .org-status-pill.active {
+  background: rgba(16, 185, 129, 0.16);
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.3);
+}
+
+.org-status-pill.inactive {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+[data-theme="dark"] .org-status-pill.inactive {
+  background: rgba(239, 68, 68, 0.16);
+  color: #f87171;
+  border-color: rgba(248, 113, 113, 0.3);
+}
+
+.org-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.org-status-pill.active .org-status-dot {
+  background: #10b981;
+  box-shadow: 0 0 6px #10b981;
+}
+
+.org-status-pill.inactive .org-status-dot {
+  background: #ef4444;
+  box-shadow: 0 0 6px #ef4444;
+}
+
+/* Card Body */
+.org-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.org-card-desc {
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 38px;
+}
+
+[data-theme="dark"] .org-card-desc {
+  color: #cbd5e1;
+}
+
+.org-card-meta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.org-card-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+[data-theme="dark"] .org-card-chip {
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.org-card-chip.org-code {
+  font-family: monospace;
+  background: rgba(124, 58, 237, 0.08);
+  color: #7c3aed;
+  border-color: rgba(124, 58, 237, 0.2);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+[data-theme="dark"] .org-card-chip.org-code {
+  background: rgba(124, 58, 237, 0.2);
+  color: #c4b5fd;
+  border-color: rgba(167, 139, 250, 0.3);
+}
+
+.org-card-chip svg {
+  font-size: 11px;
+  color: #8b5cf6;
+}
+
+/* Card Footer / Actions */
+.org-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px dashed #e2e8f0;
+}
+
+[data-theme="dark"] .org-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.org-btn-manage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+  flex: 1;
+}
+
+.org-btn-manage:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.38);
+  filter: brightness(1.05);
+}
+
+.org-btn-manage svg {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.org-btn-manage:hover svg {
+  transform: translateX(3px);
+}
+
+.org-card-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.org-action-icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.org-action-icon-btn:hover {
+  color: #7c3aed;
+  background: #f3e8ff;
+  border-color: #d8b4fe;
+  transform: translateY(-1px);
+}
+
+.org-action-icon-btn.danger:hover {
+  color: #ef4444;
+  background: #fee2e2;
+  border-color: #fca5a5;
+}
+
+[data-theme="dark"] .org-action-icon-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .org-action-icon-btn:hover {
+  background: rgba(124, 58, 237, 0.25);
+  border-color: rgba(167, 139, 250, 0.4);
+  color: #c4b5fd;
+}
+
+[data-theme="dark"] .org-action-icon-btn.danger:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(248, 113, 113, 0.4);
+  color: #fca5a5;
+}
+
+/* Empty State */
+.orgs-empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+[data-theme="dark"] .orgs-empty-state {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.orgs-empty-icon {
+  font-size: 42px;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.orgs-empty-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+[data-theme="dark"] .orgs-empty-title {
+  color: #f1f5f9;
+}
+
+.orgs-empty-desc {
+  font-size: 0.875rem;
+  color: #64748b;
+  max-width: 420px;
+  margin: 0;
+}
+
+[data-theme="dark"] .orgs-empty-desc {
+  color: #94a3b8;
+}

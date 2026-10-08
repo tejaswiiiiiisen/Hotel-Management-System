@@ -1,0 +1,306 @@
+[
+  {
+    "Field": "id",
+    "Type": "int unsigned",
+    "Null": "NO",
+    "Key": "PRI",
+    "Default": null,
+    "Extra": "auto_increment"
+  },
+  {
+    "Field": "customer_code",
+    "Type": "varchar(50)",
+    "Null": "NO",
+    "Key": "UNI",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "name",
+    "Type": "varchar(255)",
+    "Null": "NO",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "username",
+    "Type": "varchar(255)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "gender",
+    "Type": "varchar(50)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "Male",
+    "Extra": ""
+  },
+  {
+    "Field": "phone",
+    "Type": "varchar(100)",
+    "Null": "NO",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "email",
+    "Type": "varchar(255)",
+    "Null": "NO",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "bookings",
+    "Type": "int",
+    "Null": "NO",
+    "Key": "",
+    "Default": "1",
+    "Extra": ""
+  },
+  {
+    "Field": "tier",
+    "Type": "varchar(100)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "Daily Guest",
+    "Extra": ""
+  },
+  {
+    "Field": "tier_color",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "#64748b",
+    "Extra": ""
+  },
+  {
+    "Field": "tier_bg",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "#f1f5f9",
+    "Extra": ""
+  },
+  {
+    "Field": "tier_icon",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "?",
+    "Extra": ""
+  },
+  {
+    "Field": "points",
+    "Type": "varchar(50)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "0",
+    "Extra": ""
+  },
+  {
+    "Field": "stays",
+    "Type": "int",
+    "Null": "NO",
+    "Key": "",
+    "Default": "1",
+    "Extra": ""
+  },
+  {
+    "Field": "last_visit",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "status",
+    "Type": "varchar(50)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "Active",
+    "Extra": ""
+  },
+  {
+    "Field": "image",
+    "Type": "text",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "room_booked",
+    "Type": "varchar(100)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "Room 101",
+    "Extra": ""
+  },
+  {
+    "Field": "check_in",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "check_out",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "stay_days",
+    "Type": "int",
+    "Null": "NO",
+    "Key": "",
+    "Default": "1",
+    "Extra": ""
+  },
+  {
+    "Field": "guests_count",
+    "Type": "int",
+    "Null": "NO",
+    "Key": "",
+    "Default": "1",
+    "Extra": ""
+  },
+  {
+    "Field": "total_bill",
+    "Type": "decimal(10,2)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "0.00",
+    "Extra": ""
+  },
+  {
+    "Field": "paid_amount",
+    "Type": "decimal(10,2)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "0.00",
+    "Extra": ""
+  },
+  {
+    "Field": "payment_status",
+    "Type": "varchar(50)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "Paid",
+    "Extra": ""
+  },
+  {
+    "Field": "invoice_id",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "document_name",
+    "Type": "varchar(255)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "document_type",
+    "Type": "varchar(100)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "document_url",
+    "Type": "text",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "document_status",
+    "Type": "varchar(100)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "Pending",
+    "Extra": ""
+  },
+  {
+    "Field": "created_at",
+    "Type": "datetime",
+    "Null": "NO",
+    "Key": "",
+    "Default": "CURRENT_TIMESTAMP",
+    "Extra": "DEFAULT_GENERATED"
+  },
+  {
+    "Field": "updated_at",
+    "Type": "datetime",
+    "Null": "NO",
+    "Key": "",
+    "Default": "CURRENT_TIMESTAMP",
+    "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+  },
+  {
+    "Field": "org_id",
+    "Type": "varchar(50)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "CH560",
+    "Extra": ""
+  },
+  {
+    "Field": "org_name",
+    "Type": "varchar(255)",
+    "Null": "YES",
+    "Key": "",
+    "Default": "Cheery Clothing",
+    "Extra": ""
+  },
+  {
+    "Field": "offer_name",
+    "Type": "varchar(255)",
+    "Null": "YES",
+    "Key": "",
+    "Default": null,
+    "Extra": ""
+  },
+  {
+    "Field": "discount_amount",
+    "Type": "decimal(10,2)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "0.00",
+    "Extra": ""
+  },
+  {
+    "Field": "subtotal",
+    "Type": "decimal(10,2)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "0.00",
+    "Extra": ""
+  },
+  {
+    "Field": "tax",
+    "Type": "decimal(10,2)",
+    "Null": "NO",
+    "Key": "",
+    "Default": "0.00",
+    "Extra": ""
+  }
+]

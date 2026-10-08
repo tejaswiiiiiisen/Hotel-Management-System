@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "dashboard": "Tablero Principal",
+    "rooms": "Habitaciones y Suites",
+    "bookings": "Reservaciones",
+    "customers": "Clientes y Facturación",
+    "employees": "Empleados",
+    "housekeeping": "Limpieza de Habitaciones",
+    "inventory": "Inventario",
+    "purchase_orders": "Órdenes de Compra",
+    "payroll": "Nómina de Sueldos",
+    "maintenance": "Mantenimiento",
+    "reports": "Informes y Análisis",
+    "audit_logs": "Registros de Auditoría",
+    "ota": "Canales OTA",
+    "site_settings": "Configuración del Sitio",
+    "balance": "Balance",
+    "profile": "Perfil"
+  },
+  "header": {
+    "welcome": "Bienvenido de Nuevo",
+    "hotel_management": "Portal de Administración Grand Hotel",
+    "search_placeholder": "Buscar reservas, habitaciones, huéspedes...",
+    "quick_actions": "Acciones Rápidas",
+    "book_room": "Reservar Habitación",
+    "notifications": "Notificaciones",
+    "logout": "Cerrar Sesión",
+    "select_language": "Idioma"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिंदी (Hindi)",
+    "es": "Español (Spanish)",
+    "fr": "Français (French)"
+  },
+  "kpis": {
+    "total_revenue": "Ingresos Totales",
+    "active_guests": "Huéspedes Activos",
+    "occupancy_rate": "Tasa de Ocupación",
+    "total_bookings": "Reservas Totales",
+    "pending_clean": "Limpieza Pendiente",
+    "monthly_profit": "Ganancia Mensual"
+  },
+  "common": {
+    "save": "Guardar Cambios",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "status": "Estado",
+    "action": "Acción",
+    "filter": "Filtrar",
+    "all": "Todos",
+    "active": "Activo",
+    "pending": "Pendiente",
+    "completed": "Completado",
+    "view_details": "Ver Detalles",
+    "loading": "Cargando...",
+    "success": "Éxito",
+    "error": "Error"
+  }
+}

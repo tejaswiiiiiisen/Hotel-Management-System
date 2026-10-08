@@ -1,0 +1,1 @@
+import { query, db } from "./dist/db.js"; async function run() { try { const rows = await query(`SELECT rp.module_key, rp.can_view, rp.can_edit FROM roles r JOIN role_permissions rp ON r.id = rp.role_id WHERE r.name = ?`, ["manager"]); console.log(rows); } catch (e) { console.error(e); } finally { process.exit(0); } } run();

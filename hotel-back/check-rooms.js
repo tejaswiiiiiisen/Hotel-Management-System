@@ -1,0 +1,1 @@
+import { query } from "./dist/db.js"; async function run() { try { const rooms = await query("SELECT id, name, org_id, org_name FROM rooms"); console.log(rooms); } catch (e) { console.error(e); } finally { process.exit(0); } } run();

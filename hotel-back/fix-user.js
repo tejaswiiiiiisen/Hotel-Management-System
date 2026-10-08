@@ -1,0 +1,1 @@
+import { query, db } from "./dist/db.js"; async function run() { try { await query("UPDATE users SET role = 'super_admin' WHERE email = 'sunil@hotel.in'"); console.log("UPDATED sunil@hotel.in to super_admin!"); } catch (e) { console.error(e); } finally { process.exit(0); } } run();

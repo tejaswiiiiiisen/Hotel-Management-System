@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "dashboard": "Tableau de Bord",
+    "rooms": "Chambres & Suites",
+    "bookings": "Réservations",
+    "customers": "Clients & Facturation",
+    "employees": "Employés",
+    "housekeeping": "Entretien Ménager",
+    "inventory": "Inventaire",
+    "purchase_orders": "Commandes d'Achat",
+    "payroll": "Paie du Personnel",
+    "maintenance": "Maintenance",
+    "reports": "Rapports & Analyses",
+    "audit_logs": "Journaux d'Audit",
+    "ota": "Canaux OTA",
+    "site_settings": "Paramètres du Site",
+    "balance": "Solde",
+    "profile": "Profil"
+  },
+  "header": {
+    "welcome": "Bon Retour",
+    "hotel_management": "Portail d'Administration Grand Hotel",
+    "search_placeholder": "Rechercher réservations, chambres, clients...",
+    "quick_actions": "Actions Rapides",
+    "book_room": "Réserver une Chambre",
+    "notifications": "Notifications",
+    "logout": "Déconnexion",
+    "select_language": "Langue"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिंदी (Hindi)",
+    "es": "Español (Spanish)",
+    "fr": "Français (French)"
+  },
+  "kpis": {
+    "total_revenue": "Revenu Total",
+    "active_guests": "Clients Actifs",
+    "occupancy_rate": "Taux d'Occupation",
+    "total_bookings": "Total des Réservations",
+    "pending_clean": "Nettoyage En Attente",
+    "monthly_profit": "Profit Mensuel"
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "status": "Statut",
+    "action": "Action",
+    "filter": "Filtrer",
+    "all": "Tous",
+    "active": "Actif",
+    "pending": "En attente",
+    "completed": "Terminé",
+    "view_details": "Voir les Détails",
+    "loading": "Chargement...",
+    "success": "Succès",
+    "error": "Erreur"
+  }
+}

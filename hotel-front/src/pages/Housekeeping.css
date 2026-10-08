@@ -1,0 +1,366 @@
+/* ==========================================================================
+   HOUSEKEEPING & OPERATIONS - COMPLETE LIGHT & DARK THEME SYSTEM
+   ========================================================================== */
+
+/* Main Container */
+.hk-page-container {
+  padding: 24px 32px;
+  max-width: 1700px;
+  margin: 0 auto;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .hk-page-container {
+    padding: 16px 12px;
+  }
+}
+
+/* 1. Core Departments Navigation Bar */
+.hk-departments-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  padding: 8px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  margin-bottom: 24px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  flex-wrap: wrap;
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .hk-departments-nav {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+.hk-dept-tab-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 13.5px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #475569;
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .hk-dept-tab-btn {
+  color: #cbd5e1 !important;
+}
+
+.hk-dept-tab-btn:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .hk-dept-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* 2. Main Section Cards */
+.hk-section-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(24px);
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  margin-bottom: 28px;
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .hk-section-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] #staff-attendance-section {
+  border-color: rgba(16, 185, 129, 0.3) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Section Headings */
+.hk-section-heading {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+[data-theme="dark"] .hk-section-heading {
+  color: #f8fafc !important;
+}
+
+.hk-section-subtext {
+  font-size: 12.5px;
+  color: #64748b;
+}
+
+[data-theme="dark"] .hk-section-subtext {
+  color: #94a3b8 !important;
+}
+
+/* 3. Table Rows & Headers */
+[data-theme="dark"] .hk-table-header th {
+  color: #94a3b8 !important;
+}
+
+.hk-table-row {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  border: 1px solid #e2e8f0;
+  transition: all 0.15s ease;
+}
+
+[data-theme="dark"] .hk-table-row {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme="dark"] .hk-table-row:hover {
+  border-color: #6366f1 !important;
+  background: #131d31 !important;
+}
+
+[data-theme="dark"] .hk-staff-title {
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .hk-staff-sub {
+  color: #94a3b8 !important;
+}
+
+/* 4. Filter Pills - Dark Theme Overrides */
+[data-theme="dark"] .hk-pill-total-rooms:not(.active) {
+  background: rgba(99, 102, 241, 0.15) !important;
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  color: #a5b4fc !important;
+}
+
+[data-theme="dark"] .hk-pill-unassigned:not(.active) {
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+  color: #fca5a5 !important;
+}
+
+[data-theme="dark"] .hk-pill-assigned:not(.active) {
+  background: rgba(99, 102, 241, 0.15) !important;
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  color: #a5b4fc !important;
+}
+
+[data-theme="dark"] .hk-pill-in-progress:not(.active) {
+  background: rgba(245, 158, 11, 0.15) !important;
+  border-color: rgba(245, 158, 11, 0.35) !important;
+  color: #fcd34d !important;
+}
+
+[data-theme="dark"] .hk-pill-clean:not(.active) {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+  color: #6ee7b7 !important;
+}
+
+[data-theme="dark"] .hk-pill-photos:not(.active) {
+  background: rgba(139, 92, 246, 0.15) !important;
+  border-color: rgba(139, 92, 246, 0.35) !important;
+  color: #c4b5fd !important;
+}
+
+[data-theme="dark"] .hk-pill-all-staff:not(.active) {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .hk-pill-checkin:not(.active) {
+  background: rgba(37, 99, 235, 0.15) !important;
+  border-color: rgba(37, 99, 235, 0.35) !important;
+  color: #93c5fd !important;
+}
+
+[data-theme="dark"] .hk-pill-checkout:not(.active) {
+  background: rgba(234, 88, 12, 0.15) !important;
+  border-color: rgba(234, 88, 12, 0.35) !important;
+  color: #fdba74 !important;
+}
+
+[data-theme="dark"] .hk-pill-work:not(.active) {
+  background: rgba(2, 132, 199, 0.15) !important;
+  border-color: rgba(2, 132, 199, 0.35) !important;
+  color: #7dd3fc !important;
+}
+
+[data-theme="dark"] .hk-pill-leave:not(.active) {
+  background: rgba(202, 138, 4, 0.15) !important;
+  border-color: rgba(202, 138, 4, 0.35) !important;
+  color: #fde047 !important;
+}
+
+/* Active Filter Summary Bar */
+.hk-active-filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+[data-theme="dark"] .hk-active-filter-bar {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* 5. Inputs & Select Controls */
+.hk-input-control {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+[data-theme="dark"] .hk-input-control {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .hk-input-control:focus {
+  border-color: #6366f1 !important;
+}
+
+[data-theme="dark"] .hk-input-control option {
+  background: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+/* View Switcher */
+.hk-view-switcher {
+  display: flex;
+  background: #f1f5f9;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+[data-theme="dark"] .hk-view-switcher {
+  background: #0f172a !important;
+  border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .hk-view-switcher button.active {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .hk-view-switcher button:not(.active) {
+  color: #94a3b8 !important;
+}
+
+/* 6. Room Grid Box Cards */
+.hk-room-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+[data-theme="dark"] .hk-room-box {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-theme="dark"] .hk-room-box:hover {
+  transform: translateY(-2px);
+  border-color: #6366f1 !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] .hk-room-subbox {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+/* 7. Metric Cards in Kitchen & Accounting */
+.hk-metric-card {
+  background: #ffffff;
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .hk-metric-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme="dark"] .hk-metric-card strong {
+  color: #f8fafc !important;
+}
+
+/* 8. Modals System */
+.hk-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  padding: 20px;
+}
+
+.hk-modal-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  transition: all 0.2s ease;
+}
+
+[data-theme="dark"] .hk-modal-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.6) !important;
+  color: #f8fafc !important;
+}

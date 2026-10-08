@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "dashboard": "डैशबोर्ड",
+    "rooms": "कमरे और सुइट्स",
+    "bookings": "बुकिंग्स",
+    "customers": "ग्राहक और बिलिंग",
+    "employees": "कर्मचारी",
+    "housekeeping": "हाउसकीपिंग",
+    "inventory": "इन्वेंट्री",
+    "purchase_orders": "खरीद आदेश",
+    "payroll": "पेरोल",
+    "maintenance": "रखरखाव",
+    "reports": "रिपोर्ट्स और विश्लेषण",
+    "audit_logs": "ऑडिट लॉग्स",
+    "ota": "ओटीए चैनल",
+    "site_settings": "साइट सेटिंग्स",
+    "balance": "बैलेंस",
+    "profile": "प्रोफ़ाइल"
+  },
+  "header": {
+    "welcome": "वापसी पर स्वागत है",
+    "hotel_management": "ग्रैंड होटल एडमिन पोर्टल",
+    "search_placeholder": "बुकिंग, कमरे, मेहमान खोजें...",
+    "quick_actions": "त्वरित कार्रवाई",
+    "book_room": "कमरा बुक करें",
+    "notifications": "सूचनाएं",
+    "logout": "लॉग आउट",
+    "select_language": "भाषा"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिंदी (Hindi)",
+    "es": "Español (Spanish)",
+    "fr": "Français (French)"
+  },
+  "kpis": {
+    "total_revenue": "कुल राजस्व",
+    "active_guests": "सक्रिय मेहमान",
+    "occupancy_rate": "ऑक्यूपेंसी दर",
+    "total_bookings": "कुल बुकिंग्स",
+    "pending_clean": "लंबित सफाई",
+    "monthly_profit": "मासिक लाभ"
+  },
+  "common": {
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "status": "स्थिति",
+    "action": "कार्रवाई",
+    "filter": "फ़िल्टर",
+    "all": "सभी",
+    "active": "सक्रिय",
+    "pending": "लंबित",
+    "completed": "पूर्ण",
+    "view_details": "विवरण देखें",
+    "loading": "लोड हो रहा है...",
+    "success": "सफलता",
+    "error": "त्रुटि"
+  }
+}

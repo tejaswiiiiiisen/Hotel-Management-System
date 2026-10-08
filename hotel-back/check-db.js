@@ -1,0 +1,1 @@
+import { query, db } from "./dist/db.js"; async function run() { try { console.log("ROLES:", await query("SELECT * FROM roles")); console.log("PERMS:", await query("SELECT * FROM role_permissions")); console.log("USERS:", await query("SELECT id, email, role FROM users")); } catch (e) { console.error(e); } finally { process.exit(0); } } run();

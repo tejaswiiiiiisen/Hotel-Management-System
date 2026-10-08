@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "rooms": "Rooms & Suites",
+    "bookings": "Bookings",
+    "customers": "Customers & Billing",
+    "employees": "Employees",
+    "housekeeping": "Housekeeping",
+    "inventory": "Inventory",
+    "purchase_orders": "Purchase Orders",
+    "payroll": "Payroll",
+    "maintenance": "Maintenance",
+    "reports": "Reports & Analytics",
+    "audit_logs": "Audit Logs",
+    "ota": "OTA Channels",
+    "site_settings": "Site Settings",
+    "balance": "Balance",
+    "profile": "Profile"
+  },
+  "header": {
+    "welcome": "Welcome Back",
+    "hotel_management": "Grand Hotel Admin Portal",
+    "search_placeholder": "Search bookings, rooms, guests...",
+    "quick_actions": "Quick Actions",
+    "book_room": "Book Room",
+    "notifications": "Notifications",
+    "logout": "Logout",
+    "select_language": "Language"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिंदी (Hindi)",
+    "es": "Español (Spanish)",
+    "fr": "Français (French)"
+  },
+  "kpis": {
+    "total_revenue": "Total Revenue",
+    "active_guests": "Active Guests",
+    "occupancy_rate": "Occupancy Rate",
+    "total_bookings": "Total Bookings",
+    "pending_clean": "Pending Cleaning",
+    "monthly_profit": "Monthly Profit"
+  },
+  "common": {
+    "save": "Save Changes",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "status": "Status",
+    "action": "Action",
+    "filter": "Filter",
+    "all": "All",
+    "active": "Active",
+    "pending": "Pending",
+    "completed": "Completed",
+    "view_details": "View Details",
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "Error"
+  }
+}

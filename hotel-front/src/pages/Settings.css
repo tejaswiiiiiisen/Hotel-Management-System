@@ -1,0 +1,315 @@
+/* Settings.css — Settings & Audit Log Full Light & Dark Mode Support */
+
+/* Container & Panel */
+.settings-panel {
+  background: var(--panel-bg, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+}
+
+/* Tabs Header */
+.settings-tab-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.settings-tab-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: #f8fafc;
+  color: #64748b;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.settings-tab-btn.active {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+/* Date Divider */
+.audit-date-divider-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+
+.audit-date-badge {
+  position: relative;
+  z-index: 2;
+  background: #f1f5f9;
+  color: #1e293b;
+  padding: 4px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+/* Timeline */
+.audit-vertical-line {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 128px;
+  width: 2px;
+  background: #e2e8f0;
+}
+
+.audit-timestamp {
+  position: absolute;
+  left: -100px;
+  top: 2px;
+  width: 70px;
+  font-size: 13px;
+  font-family: monospace;
+  color: #64748b;
+  text-align: right;
+  font-weight: 500;
+}
+
+.audit-node-icon {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  z-index: 3;
+  box-shadow: 0 0 0 3px #ffffff;
+}
+
+.audit-content-title {
+  font-size: 14.5px;
+  color: #0f172a;
+  line-height: 1.4;
+}
+
+.audit-meta-text {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+.audit-query-box {
+  background: #fafafa;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 12.5px;
+  font-family: Consolas, Monaco, monospace;
+  color: #ec4899;
+  margin-top: 10px;
+  max-width: 550px;
+}
+
+.settings-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.settings-label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.settings-field-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 14px;
+  outline: none;
+}
+
+.settings-field-input:focus {
+  border-color: #667eea;
+}
+
+/* ===================================================
+   DARK MODE THEME OVERRIDES ([data-theme="dark"])
+   =================================================== */
+
+[data-theme="dark"] .settings-panel {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-theme="dark"] .settings-tab-header {
+  border-bottom-color: #334155 !important;
+}
+
+[data-theme="dark"] .settings-tab-btn {
+  background: #0f172a !important;
+  color: #cbd5e1 !important;
+  border-color: #334155 !important;
+}
+
+[data-theme="dark"] .settings-tab-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+[data-theme="dark"] .audit-date-divider-line {
+  background: #334155 !important;
+}
+
+[data-theme="dark"] .audit-date-badge {
+  background: #0f172a !important;
+  color: #ffffff !important;
+  border-color: #334155 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme="dark"] .audit-vertical-line {
+  background: #334155 !important;
+}
+
+[data-theme="dark"] .audit-timestamp {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="dark"] .audit-node-icon {
+  box-shadow: 0 0 0 3px #1e293b !important;
+}
+
+[data-theme="dark"] .audit-content-title {
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .audit-content-title strong.action-title {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .audit-meta-text {
+  color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .audit-query-box {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  color: #38bdf8 !important;
+}
+
+[data-theme="dark"] .settings-heading {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .settings-label {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .settings-field-input {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .audit-diff-label {
+  color: #f8fafc !important;
+}
+
+/* ===================================================
+   SETTINGS RESPONSIVE MEDIA QUERIES
+   =================================================== */
+
+@media (max-width: 768px) {
+  .settings-panel {
+    padding: 18px 14px !important;
+  }
+
+  .settings-tab-header {
+    overflow-x: auto;
+    width: 100%;
+    flex-wrap: nowrap !important;
+    padding-bottom: 12px;
+  }
+
+  .settings-tab-btn {
+    white-space: nowrap;
+    padding: 8px 14px !approval;
+  }
+
+  .audit-vertical-line {
+    left: 20px !important;
+  }
+
+  .audit-timestamp {
+    position: static !important;
+    text-align: left !important;
+    margin-bottom: 4px;
+  }
+}
+
+.settings-input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 12px;
+  padding: 11px 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font-size: 14px;
+}
+.staff-search-box { position: relative; margin-bottom: 14px; }
+.staff-search-box .settings-input { height: 48px; margin: 0; padding: 0 16px 0 44px; border: 2px solid #6366f1; border-radius: 13px; font-size: 15px; background: #f8fafc; box-shadow: 0 5px 16px rgba(99,102,241,.12); }
+.staff-search-box .settings-input:focus { outline: none; border-color: #818cf8; box-shadow: 0 0 0 4px rgba(99,102,241,.14), 0 5px 16px rgba(99,102,241,.12); }
+.staff-search-box span { position: absolute; z-index: 1; left: 15px; top: 10px; color: #6366f1; font-size: 23px; font-weight: 700; }
+.change-password-panel > .password-field-wrap .settings-input { height: 44px; border-radius: 11px; background: #ffffff; transition: border-color .2s ease, box-shadow .2s ease; }
+.change-password-panel .settings-input:focus { outline: none; border-color: #818cf8; box-shadow: 0 0 0 3px rgba(99,102,241,.12); }
+.change-password-panel .password-field-wrap { margin-bottom: 12px; }
+.change-password-panel .settings-save-btn { margin-top: 2px; padding: 12px 22px; border-radius: 10px; background: linear-gradient(135deg, #4f46e5, #7c3aed); box-shadow: 0 6px 14px rgba(79,70,229,.22); }
+.settings-save-btn {
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 18px;
+  background: #111827;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.staff-search-results { border: 1px solid #cbd5e1; border-radius: 9px; margin: -6px 0 12px; overflow: hidden; background: #fff; }
+.staff-search-results button { display: flex; flex-direction: column; align-items: flex-start; width: 100%; border: 0; border-bottom: 1px solid #e2e8f0; background: #fff; padding: 10px 13px; cursor: pointer; text-align: left; }
+.staff-search-results button:hover { background: #f1f5f9; }
+.staff-search-results span { color: #64748b; font-size: 12px; margin-top: 2px; }
+.selected-staff { background: #ecfdf5; color: #166534; border-radius: 8px; padding: 9px 12px; margin-bottom: 12px; font-size: 13px; }
+.password-field-wrap { position: relative; }
+.password-field-wrap .settings-input { padding-right: 42px; }
+.password-eye-btn { position: absolute; right: 10px; top: 9px; border: 0; background: transparent; color: #64748b; cursor: pointer; padding: 6px; }
+.password-success-popup { position: fixed; right: 28px; bottom: 28px; z-index: 1000; display: flex; align-items: center; gap: 12px; min-width: 300px; padding: 15px 16px; border: 1px solid #bbf7d0; border-radius: 14px; background: #f0fdf4; color: #166534; box-shadow: 0 14px 35px rgba(15,23,42,.18); }
+.password-success-popup strong, .password-success-popup span { display: block; }
+.password-success-popup span { margin-top: 3px; font-size: 12px; color: #15803d; }
+.success-check { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; background: #22c55e; color: white; font-weight: 800; }
+.password-success-popup button { margin-left: auto; border: 0; background: transparent; color: #166534; font-size: 20px; cursor: pointer; }

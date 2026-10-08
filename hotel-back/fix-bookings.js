@@ -1,0 +1,1 @@
+import { query, db } from "./dist/db.js"; async function run() { try { await query("ALTER TABLE bookings ADD COLUMN org_id VARCHAR(50) DEFAULT NULL"); await query("ALTER TABLE bookings ADD COLUMN org_name VARCHAR(255) DEFAULT NULL"); console.log("Added org_id and org_name to bookings"); } catch (e) { console.error(e.message); } finally { process.exit(0); } } run();
