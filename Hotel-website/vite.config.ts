@@ -5,6 +5,7 @@ import react from "@vitejs/plugin-react";
 // single origin — fetch("/api/...") calls work unchanged and the session cookie
 // is sent as same-origin. Set VITE_API_TARGET to point at a different backend.
 export default defineConfig({
+  base: "/Hotel-Management-System/",
   plugins: [react()],
   server: {
     port: 5173,
